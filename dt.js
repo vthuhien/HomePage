@@ -37,3 +37,32 @@ btnPrev.addEventListener('click',()=>{
 
   }
 })
+
+
+
+///js thêm nè
+
+const megaMenus = document.querySelectorAll('.mega-menu');
+
+// console.log(megaMenu);
+const overlay = document.querySelector('.nav__overlay');
+megaMenus.forEach(megaMenu => {
+  if (megaMenu && overlay) {
+    // Thêm sự kiện mouseover vào phần tử mega-menu
+    megaMenu.addEventListener('mouseover', () => {
+        // Thêm CSS cho overlay khi rê chuột vào mega-menu
+        overlay.style.opacity = 1;
+        
+    });
+  
+    // Thêm sự kiện mouseout vào phần tử mega-menu
+    megaMenu.addEventListener('mouseout', () => {
+        // Xóa CSS cho overlay khi rời chuột khỏi mega-menu
+        overlay.style.opacity = 0; // Hoặc bạn có thể đặt lại giá trị mặc định khác nếu cần
+    });
+  } else {
+    console.error('Không tìm thấy phần tử mega-menu hoặc nav__overlay.');
+  }
+  // Thực hiện các thao tác bạn muốn với từng phần tử mega-menu ở đây
+});
+
