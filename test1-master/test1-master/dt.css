@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-style: normal;
+width: 100%;
+}
+
+/* style navbar */
+.logo img{
+    margin-top: 0.3rem;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+}
+.header-navbar{
+    position: relative;
+    z-index: 100001;
+    background-color: rgb(255, 255, 255);
+    height: 2.5rem;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgb(211, 211, 211);
+    /* position: fixed; */
+}
+.navbar-item a {
+    text-decoration: none;
+    color: black;
+}
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+ .left{
+    display: flex;
+ }
+ .left a{
+    margin-top: 0.7rem;
+    margin-left: 20px
+ }
+.right {
+    padding: 10px;
+}
+.right a{
+    margin-left: 20px;
+}
+.navbar-item a:hover{
+    color: rgba(112, 182, 115, 1.00);
+}
+
+.content{
+    margin-top: 0.5rem;
+    z-index: 1;
+    background-color: #f5f5f5;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    height: 5rem;
+    display: none;
+    justify-content: center
+}
+
+.background{
+    z-index: 1;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:2.5rem;
+    left:0;
+    background-color:#2525258c;    
+    opacity:0;
+}
+/* .mega-menu:hover .background {
+    opacity:1;
+    animation:fade 1s;    
+} */
+
+.content p{
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+.content img{
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+.content p:hover{
+    color: rgba(112, 182, 115, 1.00);
+}
+.content{
+    transition-delay: 1s;
+    transition: all 4s ease;
+}
+.mega-menu:hover .content{
+    color: black;
+    display: flex;
+    transition-delay: 1s;
+    transition: all 4s ease;
+
+}
+.drop-two i{
+    font-size:25px;
+    margin-left: 5rem;
+}
+.drop-two img{
+    margin-left: -5rem;
+    margin-top: -0.5rem;
+}
+.drop-one {
+    height: 10rem;
+    padding: 40px;
+    transform: tr;
+
+}
+.drop-two {
+    height: 10rem;
+    padding: 40px;
+
+}
+.drop-three {
+    height: 10rem;
+    padding: 40px;
+
+}
+.drop-three img{
+    height:30px;
+    width:30px;
+    margin: 0 0 0 -3rem;
+}
+
+/* slide-container */
+.slide-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.list-image{
+    
+    display: flex;
+    transform: translateX();
+}
+.image{
+    width: 100rem;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.nav__overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 10000;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+
+/* product-block */
+
+.product-block{
+    width: 100%;
+    height: 70rem;
+    background-color: rgb(231, 228, 228);
+    
+
+}
+.title{
+    /* width: 100%; */
+    height: 10rem;
+    padding: 4rem 0 3rem 0;
+    margin-left: 40%;
+}
+.product-select{
+    display: flex;
+    margin-left: 25%;
+}
+.product{
+    margin-right: 4rem;
+}
+/* .product:hover{
+    color: rgba(112, 182, 115, 1.00);
+    cursor: pointer;
+   
+} */
+
+/* inner product */
+.product-content-inner{
+    /* position: absolute; */
+    display: flex;
+    padding: 20px;
+    
+}
+.product-content{
+    position: absolute;
+    width: 75rem;
+    margin: 3rem 0 0 -16rem;
+    background-color: #f5f5f5;
+    height: 45rem;
+    border-radius: 10px;
+}
+.first img{
+    width: 580px;
+    border-radius: 20px;
+}
+.div{
+    display: flex;
+    width: 38rem;
+    height: 20rem;
+    background-color: rgba(231, 228, 228, 0.37);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: -10px;
+
+}
+.text{
+    margin: auto;
+    font-size: 14px;
+}
+.product1 p { color: red};
+
+.product p:hover {
+    color: rgba(112, 182, 115, 1.00);
+    cursor: pointer;
+    
+}
