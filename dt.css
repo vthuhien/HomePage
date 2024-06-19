@@ -115,8 +115,6 @@ width: 100%;
 .drop-one {
     height: 10rem;
     padding: 40px;
-    transform: tr;
-
 }
 .drop-two {
     height: 10rem;
@@ -186,6 +184,7 @@ width: 100%;
 }
 .product{
     margin-right: 4rem;
+    
 }
 .product:hover{
     color: rgba(112, 182, 115, 1.00);
@@ -208,5 +207,4 @@ width: 100%;
     background-color: rgba(0,0,0,0.3);
     z-index: 10000;
     transition: opacity 0.3s ease-in-out;
-
 }
