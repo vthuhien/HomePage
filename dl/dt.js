@@ -1,5 +1,4 @@
 const listImage=document.querySelector(".list-image");
-console.log(listImage);
 const imgs=document.getElementsByClassName("image");
 const length = imgs.length // độ dài của arr chứa tất cả ảnh
 let current = 0;   // vì tới ảnh 2 nó dừng nên ta cần set biến current rồi lấy width*-1*với current để slide chuyển động
@@ -66,3 +65,29 @@ megaMenus.forEach(megaMenu => {
   // Thực hiện các thao tác bạn muốn với từng phần tử mega-menu ở đây
 });
 
+// navigator tabs
+const tabs=document.querySelectorAll(".tags");
+
+// const products = document.querySelectorAll(".product_content")
+const products =document.querySelectorAll(".product_content");
+console.log(products)
+console.log(tabs);
+// nên tập console.log ra check, coi thử đã lấy đƯợc chưa nhé, rồi mới code tiếp từ từ
+tabs.forEach((tags,index)=>{
+  tags.addEventListener(('click'),(e)=>{
+    tabs.forEach(tags=>{tags.classList.remove('active')}) //set để khi click sang tab2 thì xoá tab1 đã click đi
+    tags.classList.add('active');
+
+    const line = document.querySelector('.line');
+    line.style.width=e.target.offsetWidth+"px"; //set để get ra width,left để line di chuyển
+    line.style.left=e.target.offsetLeft+"px";
+
+    console.log(products);
+    products.forEach(product_content=>{
+      product_content.classList.remove('active')
+    });
+    // chỗ này thêm index vào, để nó lấy giá trị theo index trong mảng products nè :))
+    products[index].classList.add('active')
+  })
+
+})
