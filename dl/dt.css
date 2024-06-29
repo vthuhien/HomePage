@@ -151,11 +151,7 @@ body{
     /* overflow: hidden; */
 
 }
-.list-image .image {
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-}
+
 .prev,
 .next {
   position: absolute;
