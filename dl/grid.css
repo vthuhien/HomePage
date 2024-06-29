@@ -428,7 +428,11 @@
 }
 
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 1440px) {
+    .line{
+        width: 100px;
+        /* left: 360px; */
+    }
     .wide {
         width: 644px;
     }
@@ -490,6 +494,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .line{
+        width: 50px;
+        left: 35px;
+    }
     .navbar-item a{
         font-size: 10px;
     }
@@ -505,10 +513,7 @@
         width: 25px;
         height: 25px;
     }
-    /* .list-image .image{
-        width: 100%;
-    height: 153px;
-    } */
+    
     .product-block {
         height: 30rem;
     }
@@ -591,10 +596,10 @@
   }
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
-    /* .list-image .image{
-        width: 100%;
-        height: 340px;
-    } */
+    .line{
+        width: 100px;
+        left: 150px;
+    }
     .product-block {
         height: 70rem;
     }
