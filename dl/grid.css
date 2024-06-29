@@ -429,189 +429,230 @@
 
 /* Tablet - PC low resolution */
 @media (min-width: 740px) and (max-width: 1440px) {
-    .line{
+    .line {
         width: 100px;
         /* left: 360px; */
     }
+
     .wide {
         width: 644px;
     }
+
     /* .list-image .image{
         width: 100%;
         height: 350px;
     } */
-    .product_content{
+    .product_content {
         width: 90%;
         height: 27rem;
     }
-    .first img{
+
+    .first img {
         width: 350px;
         height: 200px;
     }
-    
-    .first .block{
+
+    .first .block {
         width: 100%;
         height: 12.5rem;
     }
-    
-    .block-text{
+
+    .block-text {
         font-size: 10px;
         padding: 10px;
     }
-    .second .block{
+
+    .second .block {
         width: 100%;
         height: 12.5rem;
     }
-    .product_content_inner{
+
+    .product_content_inner {
         padding: 10px;
     }
-    .third img{
+
+    .third img {
         width: 350px;
         height: 200px;
     }
-    .third .block{
+
+    .third .block {
         width: 100%;
         height: 12.5rem;
     }
-    .wrapper-div{
+
+    .wrapper-div {
         width: 100%;
         height: 12.5rem;
         margin-right: 0.3rem;
     }
-    .wrapper-div img{
+
+    .wrapper-div img {
         width: 100px;
         height: 100px;
         margin-left: 30px;
     }
-    .fourth .block-text{
+
+    .fourth .block-text {
         font-size: 12px;
         padding: 0 7.5px
     }
+
     .product-block {
         height: 50rem;
     }
-    
+
 }
 
 @media only screen and (max-width: 600px) {
-    .line{
+    .line {
         width: 50px;
         left: 35px;
     }
-    .navbar-item a{
+
+    .navbar-item a {
         font-size: 10px;
     }
-    .mega-menu{
+
+    .mega-menu {
         padding: 0;
         margin-right: 7px;
     }
-    .logo{
+
+    .logo {
         margin-right: 5px;
     }
-    .drop_two img{
-        
+
+    .drop_two img {
+
         width: 25px;
         height: 25px;
     }
-    
+
     .product-block {
         height: 30rem;
     }
-    .title{
+
+    .title {
         font-size: 10px;
         margin: 0;
         height: 0;
     }
-    .product-tag .tags{
+
+    .product-tag .tags {
         padding: 0;
         font-size: 10px;
     }
+
     /* here */
-    .product_content{
+    .product_content {
         width: 90%;
         height: 14rem;
     }
-    
-    .first img{
+
+    /*tesst*/
+    .product_content_inner {
+        width: 100%;
+    }
+
+    .first img {
         width: 250px;
         height: 100px;
     }
-    
-    .first .block{
+
+    .first .block {
         width: 100%;
         height: 6.4rem;
     }
-    .block-text{
+
+    .block-text {
         font-size: 6px;
         padding: 10px;
     }
-    .btn-more{
+
+    .btn-more {
         font-size: 7px;
-    padding: 3px;
+        padding: 3px;
     }
-    .second .block{
+
+    .second .block {
         width: 100%;
         height: 6.4rem;
     }
-    .product_content_inner{
+
+    .product_content_inner {
         padding: 10px;
     }
-    .third img{
+
+    .third img {
         width: 250px;
         height: 100px;
     }
-    .third .block{
+
+    .third .block {
         width: 100%;
         height: 6.4rem;
     }
-    .wrapper-div{
+    
+
+    .wrapper-div {
         width: 100%;
         height: 6.4rem;
         margin-right: 0.3rem;
     }
-    .wrapper-div img{
+
+    .wrapper-div img {
         width: 60px;
         height: 60px;
         margin-left: 10px;
     }
-    .fourth .block-text{
+
+    .fourth .block-text {
         font-size: 5px;
         padding: 0 7.5px
     }
-    .wrapper .btn-more{
+
+    .wrapper .btn-more {
         font-size: 7px;
         padding: 2px;
         margin: 2rem 0 0 0.5rem;
     }
-    .container_inner img{
+
+    .container_inner img {
         width: 30px;
         height: 30px;
     }
-    .container_inner_block{
+
+    .container_inner_block {
         padding: 3px 7.5px;
         font-size: 10px;
         height: 10rem;
     }
-    
-  }
+
+}
+
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
-    .line{
+    .line {
         width: 100px;
         left: 150px;
     }
+
     .product-block {
         height: 70rem;
     }
-    .product_content{
+
+    .product_content {
         width: 100%;
         height: 45rem;
     }
-    .wrapper-div{
+
+    .wrapper-div {
         width: 100%;
         height: 18rem;
         margin-right: 0.3rem;
     }
+
     .wide {
         width: 984px;
     }
