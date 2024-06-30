@@ -13,133 +13,219 @@
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="header-navbar">
+    <div class="container">
+        <div class="header-navbar">
 
-        <div class="navbar-list">
-            <div class="navbar-item left">
-                <div class="logo">
-                    <img src="./img/logo.png" alt="">
+            <div class="navbar-list">
+                <div class="navbar-item left">
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    
+                    <a href="#" class="mega-menu">Điện thoại
+                        <div class="content drop-one" >
+                            <p>Xiao</p>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWklEQVR4nO3RwQ2AQAwDwfTfdPjQAL/lbkZyAdbOcJ9993vrSIwiNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNccUYT54ANVKW6X/ewviAAAAAElFTkSuQmCC" height="20px" width="20px">
+                            <p>Redmi</p>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWklEQVR4nO3RwQ2AQAwDwfTfdPjQAL/lbkZyAdbOcJ9993vrSIwiNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNccUYT54ANVKW6X/ewviAAAAAElFTkSuQmCC" height="20px" width="20px">
+                            <p>Poco</p>
+                        </div>
+                    </a>
+                    <a href="#" class="mega-menu menu-two">Nhà Thông Minh
+                        <div class="content drop-two" >
+                            <div class=" images">
+                                <p>TV & Phương Tiện</p>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVR4nO3V0Q0AIAgD0e6/9LmEpmDuJfyXgJhIGojHtSfAbQbAEcQljM8wHiJWnWLanxGtAGPR7pR2AOlPB3PEp1nXXeV7AAAAAElFTkSuQmCC"height="40px" width="40px">
+                            </div>
+                            <div class=" images">
+                                <p>Máy Hút Bụi Đa Năng</p>
+                            <img src="data:image/png;base64,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" height="35px" width="35px">
+    
+                            </div>
+                            <div class=" images">
+                                <p>Thiết Bị Môi Trường</p>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC5ElEQVR4nO2ZTUhUURTHfzpDZas0CtIWZYsgoRaVGrRumRESUW2CaNPKhZh9LCLToBaVSq3blmEKbVwHtYmabFUQldCHZSGR2teLC2dgGN57cz/OzBjMHw483rzzP+fce+65596BGmqoQQP1QCdwBhgDpoE54KfInLy7C/QDHaJTdWwEhoAZIHKUd8Ag0FINx9cCN4ElD8eLZREYBZoq5fxh4LOC48UyCxwqp+NZGfWozDIitlTRAEx6OPMJ+OqhNyE2VZD1cN5UnJ2iXwfs81joE1oz4Zo288CmGJ49wB9HrmGNBes6/fdS+HIefN0hpdKn2qSN2gPPddToE4BvxZlK4XztyTnss8P6blLzCW3Cek++SDY7px17KMCYkW0xnPsDOS/ZOm9G722gseMxvIOBnDNAxiaAzkBDkayfYkwp8LbbBHBWwdCTmFn9psDbZxPAmIKhX8CqAs6tCpwRcMcmgGklY4W1u12JM2cTwBcFQ48lbY6JrATeK7XcJRF6SHkIbBbH8++OAruAF4Hci+UK4ClwHmgr4CkOIN+ZmnS6DLwsVwA2KfQXeAT0AlsSeOrE8SPyHIftwAXguWYKlVrEpp63WvC0StnrAdZZfL/DolvNhZZRkyorLDhMC/yjQM90tXst9NbIKAeV0f4UgpMW+qcSDi4moC4L/SuhG1lHCsGBFD2T5xdLpMBv4EQJ+70p+qaSBTVzVxN0TJN1y6GamCqUhPEEnTcut3lJneN3YHfRt6uB+0rXJ10yS3HfD+CAFqm5UUIu35CW+RzwysP5wqavR9LqtvRQcd8tAM04YjTAMW25jgea5EBdbec/+h7qkbvKagdwkECMVNH5ayggo3TIcZVJzUveBrmrrJTz45qXu3lk5YKpEhUnQxnRLZVB2/EPGgvWFo0yG0mbnYssyKibTrTiaJYbM5+LMNPbmPZgA8sA9XJUPC09e05Odksi5vmZ/NYn/dSy+Ju1hhr4z/EPbjEd/Eamz5kAAAAASUVORK5CYII="height="40px" width="40px">
+    
+                            </div>
+                            <div class=" images">
+                                <p>Thiết Bị Thông Minh</p>
+                                <img src="data:image/png;base64,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"height="40px" width="40px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="mega-menu menu-three">Phong Cách Sống
+                        
+                        <div class="content drop-three" >
+                            <div class="mega-menu images">
+                                <p>Thiết bị đeo</p>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABFUlEQVR4nL1WOwrCQBSczoDBzkuIYCo/lZ7HVJ5DIn4rcwy11SuIV7Cz0c6AEHkwgRDi+jYxDiwkO7Nvlreft4AZTQDxlyaawhgpDIZlDHwGCXO4kNy4jMGGQSY53ITcuozBSZGiY9HgNQA3hcGNWis4AA4M8ASwANADUGeT7yU50ew5Ro05B14BdAw6jxrRBtrgbQAvzq6T4ZK0ZE2eHNPSGAQMImmBwkCwYv8UClwo7uZwnwz67D9rDB4UuwaDrJHL/3tVBg0bA1OKPsEqRckiyz7XwmqR09vUU+hFE9lsU8EsddA85UFTzT6Bw+Mfc3Yr5tllG7AvomZX5D6q9LL7y3X9l4LjG0rm9hcls/KiX/rZ8gbeZ6Bb8iTqkgAAAABJRU5ErkJggg==">
+    
+                            </div>
+                            <div class="mega-menu images">
+                                <p>Văn Phòng</p>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA10lEQVR4nO2ZTQ4BQRBGHxtuway4gDgkw4nE0s9Bxg0Im5JIk1lYmGR+qsb3ktr3y6t0LxqEEH/DGNgCF8CCTQFsksNLwoJPTqnEgngsS2U+VlGx9/kl4gRTEWeYijjDVMQZpiLOMBVxhqmIM0xFnGEq4gxTEWeYijjDelvEgg9dHyCMyCNNaJE7MAWyFmRoWiRrS6TowWoVpL8FCz4r0m9P3kKZpkqsgVGH75hohQFw/WElbsAQx8wr7PcMp0yBfQWRHTDBEecabp8jDjjVIHLoWkIIvvME7SuNP82FkIgAAAAASUVORK5CYII=">
+    
+                            </div>
+                            <div class="mega-menu images">
+                                <p>Thể Thao</p>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADcElEQVR4nO2YW4hNURjHf8fBlPvd4MGtFEXk1igplzDEgxeKeSOM8iBRyoN7SREeZFye5EHut1eGB3chMrnNPPCCcZlxGcbRl/+u1W6fs/eeM8cM7X+dOutb/++21re+vfaGBAlaDP2AcuAi8BSoA2qBu8A+YGQz+BgF7JfNWvkwXxeAlYqhyegl49+ATMjvCNCxCT46AUcj2P+mResZ18EM4I2MNADHgIXAEKAD0BUYA2wHPoj3AOgew0cP4KF0bRe2AaOBLloU87UIOK4YjPcamB7VQRnwQ4rngIEh/CFKwvhXgHYRfLQT13TuA4ND+IOA887CLg5zMAf4KQVboRTRYDVcLb11Efjrxa2OUf8pVUBGMZbmInvltCmi8UrgpsphunTrQoIbANSLO026t7RDUbBZuhZrVniHq00kk38CMP4pjU9pvDWHzg5xTmh8VmNbkCho48SZFaGEgNp9J535wCT9fwu0D+AXAe/FmSgdjx92FmPFGTcRwwrpHNLY60SzA7hznQNuOKzx8pg+M3ETua5zEHYIFzjnYqNsHAjgVmhug8b9pRvWVK774oidiClfJR7Gy0ZVwNwzzY2NabPSF0dBSsuPtsBH2Sl25MWS2Vw6Tx+Zv5GI4ZrsTHVk0ySLu8N5JWLdJR94Z8EufB7KJTuYp+2iKIlUiVAR4QDe1HOkb8DcWtnZ48j2SrYmgG9ldxu4EeIzpe6Y0e04K6y3f3GSSYckYrxHuki6mKc5u/p7uCyZtWAXdkF8HOGhmHaSqFdTyYlS5wph9Tw8C6+304V2+eYmSG475uGOZON83N2Smy2zGYQR6lxeEjOJCNuZl1JsBE4CS4BhWkG7xpcAl8SxXezj6A+V/IUjeyXZYF9JfXV2r0S2O8pXma49jeI81yLFghnc6exO2G+Vo9vNabUePklmdj2sjmi7Tne0zuQB2+5lutw9AT7rRegesEVvkRntmvssyei9xoP3emBzHk5Ltl8XzXuy/Vm+zgBLc5Rcs2JKQBdJO+8NHn5J5nZD74xNphWgq4L57shSklnwuRJpCCi3FkXQA8ovi8JpcSSJkOxIYZCUFklpFQZJaZGUVmGQlBZJaRUGSWmRlFZh8F+WVqXvw4Gfk3G+rP/ziVwN0GsV+G9KqybL96iamJwWx6yAQGskj8NJkIBWht8AruEdMnBcuwAAAABJRU5ErkJggg==">
+        
+                            </div>
+                            <div class="mega-menu images">
+                                <p>Phụ Kiện</p>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACLklEQVR4nO2ZP0jcMRTHP1pw6+Dk4uAmDi3tIIhjNze1/KoiFXHs7CKdHFqhuoiIY5diy4mT0MX9cOvUavHP4lzU9pAWqr/yIAePmPv98vvd4eVovvDgSF6S+1zeS3IJREVF/fdKgLSBSV0R9QBTwDZwBNSMHZmyF8YnaJDnwGlGX3U7ASZDBHkArHkA2LYKdLcKogJUMwarGp8suSC+Am+BeWPy+ZvD712rQHx/vaxw0n6XwAzQ5fCVslngymoz3m6QHisnBOKRx5iPLZjjViwArjByhZtLU5aPzISvXja5OmaCJBkLgEvbVk64wqmRuoBD1f5DO0G+q/o3JcZeUe1ln2kbyC9VLytTUS2o9tJX20CajfHEc2X0UgQh4BmpFlx+gwVJC26IQYGceUDI7h08yFPgvQmnc9XpuSmTuiedAKJVUZ3mnXhFEcQozkieYmgRk52OXbWeAesNTg9S9glYBvpDBlkEbj1PEhfmL3FwIH3AnwJHohTYDxFkzBFGFYfpcKuFCOK7+SWtOLZEEOKM3FEMLa2PKsl2yb+B10k5EVKyr6sOvuT4DloDjub4JyWW37QsiL6PlR142PMp4TfwsCBI6mml1Av8tF6WBhx+08Bf5bfj0fe9goheWx3JVeYGMAe8Aj5b9TIbQ+RrxHEvkDb5wJSbxHueg92WuPPVm26aYU0/M2AeXTaBm4yBfpjXKkIGqUuugbbM88G1+fIHwJLJJzoFJCoqis7TP6kUYt44YnfSAAAAAElFTkSuQmCC">
+    
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="navbar-item right">
+                    <a href="#">HỖ TRỢ</a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-solid fa-house"></i></a>
+                    
+                </div>    
+            </div>
+        </div>
+        
+      
+         <div class="nav__overlay">
+        </div> 
+        
+        <div class="slide-container">
+            <div class="list-image">
+                <img class="image" src="img/xiaomi14Ultra.PNG" alt="">
+                <img class="image" src="./img/redmi13.PNG" alt="">
+                <img class="image" src="./img/redmi note 13 pro.PNG" alt="">
+                <img class="image" src="./img/redmi pad pro.PNG" alt="">
+            </div>
+            <div class="next" onclick="plusSlide(-1)">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAARklEQVR4nO3NsQ0AIAzEwN88lGxtBANQ4SISLyWlL/nrsGkD2Ag2go1gI9gINoKNcLkygXoRjx2PHY8djx2PHd8b5/+13QJ3xUACiE5l8AAAAABJRU5ErkJggg==">
+            </div>
+            <div class="prev" onclick="plusSlide(1)">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAQklEQVR4nO3UsQ0AIBDDQG9Ny+ZmBBpcvEQG8HWBv+nbddw6bh23jlvHrePWcV8AqwZuCDVCjVAj1Ag1Mveu/3iyA6HmP4qebmvvAAAAAElFTkSuQmCC">
+            </div>
+        </div>
+    
+       
+         <div class="product-block" >
+            <div class="title">
+                <h1>Sản Phẩm Nổi Bật</h1>
+            </div>
+            <div class="product-tag">
+                <p class="tags one active">Sản Phẩm Cao Cấp</p>
+                <p class="tags two">Sản Phẩm Thời Thượng</p>
+                <p class="tags three">Giải Trí Tại Nhà</p>
+                <p class="tags four">Thiết Bị Gia Dụng</p>
+            </div>
+            <div class="product-select">
+                <!-- <div  class="line"></div> -->
+                <div class="product_content active">
+                        
+                        <div class="product_content_inner first">
+                           <div class="block">
+                                  <img src="./img/xiaomi.webp" alt="">  
+                                <div class="block-text">
+                                    <h1>Xiaomi 13T Pro</h1>
+                                    <p> Ống kính quang học chuyên nghiệp của Lecia kháng nước và bụi chuẩn IP68</p>
+                                    <button class="btn-more">Tìm hiểu thêm</button>  
+                                </div> 
+                                                     
+                            </div>  
+                        </div>  
+    
+                        
+                         <div class="product_content_inner second">
+                            <div class="block">
+                                 <img src="./img/dh s3.webp" alt=""> 
+                                 <div class="block-text">
+                                    <h3>Xiaomi Watch S3</h3>
+                                    <băng>Hỗ trợ 150+ chế độ luyện tập tích hợp GNSS băng tần kép L1+L5</p>
+                                    <button class="btn-more">Tìm hiểu thêm</button>                     
+        
+                                </div>
+                            </div>
+                            <div class="block">
+                               <img src="./img/dh band8 pro.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>                   
+                                    <button class="btn-more">Tìm hiểu thêm</button>  
+                                </div>   
+                            </div>
+                        </div>
+                    
                 </div>
                 
-                <a href="#" class="mega-menu">Điện thoại
-                    <div class="content drop-one" >
-                        <p>Xiao</p>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWklEQVR4nO3RwQ2AQAwDwfTfdPjQAL/lbkZyAdbOcJ9993vrSIwiNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNccUYT54ANVKW6X/ewviAAAAAElFTkSuQmCC" height="20px" width="20px">
-                        <p>Redmi</p>
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWklEQVR4nO3RwQ2AQAwDwfTfdPjQAL/lbkZyAdbOcJ9993vrSIwiNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNYrUKFKjSI0iNccUYT54ANVKW6X/ewviAAAAAElFTkSuQmCC" height="20px" width="20px">
-                        <p>Poco</p>
-                    </div>
-                </a>
-                <a href="#" class="mega-menu menu-two">Nhà Thông Minh
-                    <div class="content drop-two" >
-                        <div class=" images">
-                            <p>TV & Phương Tiện</p>
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVR4nO3V0Q0AIAgD0e6/9LmEpmDuJfyXgJhIGojHtSfAbQbAEcQljM8wHiJWnWLanxGtAGPR7pR2AOlPB3PEp1nXXeV7AAAAAElFTkSuQmCC"height="40px" width="40px">
-                        </div>
-                        <div class=" images">
-                            <p>Máy Hút Bụi Đa Năng</p>
-                        <img src="data:image/png;base64,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" height="35px" width="35px">
-
-                        </div>
-                        <div class=" images">
-                            <p>Thiết Bị Môi Trường</p>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC5ElEQVR4nO2ZTUhUURTHfzpDZas0CtIWZYsgoRaVGrRumRESUW2CaNPKhZh9LCLToBaVSq3blmEKbVwHtYmabFUQldCHZSGR2teLC2dgGN57cz/OzBjMHw483rzzP+fce+65596BGmqoQQP1QCdwBhgDpoE54KfInLy7C/QDHaJTdWwEhoAZIHKUd8Ag0FINx9cCN4ElD8eLZREYBZoq5fxh4LOC48UyCxwqp+NZGfWozDIitlTRAEx6OPMJ+OqhNyE2VZD1cN5UnJ2iXwfs81joE1oz4Zo288CmGJ49wB9HrmGNBes6/fdS+HIefN0hpdKn2qSN2gPPddToE4BvxZlK4XztyTnss8P6blLzCW3Cek++SDY7px17KMCYkW0xnPsDOS/ZOm9G722gseMxvIOBnDNAxiaAzkBDkayfYkwp8LbbBHBWwdCTmFn9psDbZxPAmIKhX8CqAs6tCpwRcMcmgGklY4W1u12JM2cTwBcFQ48lbY6JrATeK7XcJRF6SHkIbBbH8++OAruAF4Hci+UK4ClwHmgr4CkOIN+ZmnS6DLwsVwA2KfQXeAT0AlsSeOrE8SPyHIftwAXguWYKlVrEpp63WvC0StnrAdZZfL/DolvNhZZRkyorLDhMC/yjQM90tXst9NbIKAeV0f4UgpMW+qcSDi4moC4L/SuhG1lHCsGBFD2T5xdLpMBv4EQJ+70p+qaSBTVzVxN0TJN1y6GamCqUhPEEnTcut3lJneN3YHfRt6uB+0rXJ10yS3HfD+CAFqm5UUIu35CW+RzwysP5wqavR9LqtvRQcd8tAM04YjTAMW25jgea5EBdbec/+h7qkbvKagdwkECMVNH5ayggo3TIcZVJzUveBrmrrJTz45qXu3lk5YKpEhUnQxnRLZVB2/EPGgvWFo0yG0mbnYssyKibTrTiaJYbM5+LMNPbmPZgA8sA9XJUPC09e05Odksi5vmZ/NYn/dSy+Ju1hhr4z/EPbjEd/Eamz5kAAAAASUVORK5CYII="height="40px" width="40px">
-
-                        </div>
-                        <div class=" images">
-                            <p>Thiết Bị Thông Minh</p>
-                            <img src="data:image/png;base64,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"height="40px" width="40px">
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="mega-menu menu-three">Phong Cách Sống
-                    
-                    <div class="content drop-three" >
-                        <div class="mega-menu images">
-                            <p>Thiết bị đeo</p>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABFUlEQVR4nL1WOwrCQBSczoDBzkuIYCo/lZ7HVJ5DIn4rcwy11SuIV7Cz0c6AEHkwgRDi+jYxDiwkO7Nvlreft4AZTQDxlyaawhgpDIZlDHwGCXO4kNy4jMGGQSY53ITcuozBSZGiY9HgNQA3hcGNWis4AA4M8ASwANADUGeT7yU50ew5Ro05B14BdAw6jxrRBtrgbQAvzq6T4ZK0ZE2eHNPSGAQMImmBwkCwYv8UClwo7uZwnwz67D9rDB4UuwaDrJHL/3tVBg0bA1OKPsEqRckiyz7XwmqR09vUU+hFE9lsU8EsddA85UFTzT6Bw+Mfc3Yr5tllG7AvomZX5D6q9LL7y3X9l4LjG0rm9hcls/KiX/rZ8gbeZ6Bb8iTqkgAAAABJRU5ErkJggg==">
-
-                        </div>
-                        <div class="mega-menu images">
-                            <p>Văn Phòng</p>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA10lEQVR4nO2ZTQ4BQRBGHxtuway4gDgkw4nE0s9Bxg0Im5JIk1lYmGR+qsb3ktr3y6t0LxqEEH/DGNgCF8CCTQFsksNLwoJPTqnEgngsS2U+VlGx9/kl4gRTEWeYijjDVMQZpiLOMBVxhqmIM0xFnGEq4gxTEWeYijjDelvEgg9dHyCMyCNNaJE7MAWyFmRoWiRrS6TowWoVpL8FCz4r0m9P3kKZpkqsgVGH75hohQFw/WElbsAQx8wr7PcMp0yBfQWRHTDBEecabp8jDjjVIHLoWkIIvvME7SuNP82FkIgAAAAASUVORK5CYII=">
-
-                        </div>
-                        <div class="mega-menu images">
-                            <p>Thể Thao</p>
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADcElEQVR4nO2YW4hNURjHf8fBlPvd4MGtFEXk1igplzDEgxeKeSOM8iBRyoN7SREeZFye5EHut1eGB3chMrnNPPCCcZlxGcbRl/+u1W6fs/eeM8cM7X+dOutb/++21re+vfaGBAlaDP2AcuAi8BSoA2qBu8A+YGQz+BgF7JfNWvkwXxeAlYqhyegl49+ATMjvCNCxCT46AUcj2P+mResZ18EM4I2MNADHgIXAEKAD0BUYA2wHPoj3AOgew0cP4KF0bRe2AaOBLloU87UIOK4YjPcamB7VQRnwQ4rngIEh/CFKwvhXgHYRfLQT13TuA4ND+IOA887CLg5zMAf4KQVboRTRYDVcLb11Efjrxa2OUf8pVUBGMZbmInvltCmi8UrgpsphunTrQoIbANSLO026t7RDUbBZuhZrVniHq00kk38CMP4pjU9pvDWHzg5xTmh8VmNbkCho48SZFaGEgNp9J535wCT9fwu0D+AXAe/FmSgdjx92FmPFGTcRwwrpHNLY60SzA7hznQNuOKzx8pg+M3ETua5zEHYIFzjnYqNsHAjgVmhug8b9pRvWVK774oidiClfJR7Gy0ZVwNwzzY2NabPSF0dBSsuPtsBH2Sl25MWS2Vw6Tx+Zv5GI4ZrsTHVk0ySLu8N5JWLdJR94Z8EufB7KJTuYp+2iKIlUiVAR4QDe1HOkb8DcWtnZ48j2SrYmgG9ldxu4EeIzpe6Y0e04K6y3f3GSSYckYrxHuki6mKc5u/p7uCyZtWAXdkF8HOGhmHaSqFdTyYlS5wph9Tw8C6+304V2+eYmSG475uGOZON83N2Smy2zGYQR6lxeEjOJCNuZl1JsBE4CS4BhWkG7xpcAl8SxXezj6A+V/IUjeyXZYF9JfXV2r0S2O8pXma49jeI81yLFghnc6exO2G+Vo9vNabUePklmdj2sjmi7Tne0zuQB2+5lutw9AT7rRegesEVvkRntmvssyei9xoP3emBzHk5Ltl8XzXuy/Vm+zgBLc5Rcs2JKQBdJO+8NHn5J5nZD74xNphWgq4L57shSklnwuRJpCCi3FkXQA8ovi8JpcSSJkOxIYZCUFklpFQZJaZGUVmGQlBZJaRUGSWmRlFZh8F+WVqXvw4Gfk3G+rP/ziVwN0GsV+G9KqybL96iamJwWx6yAQGskj8NJkIBWht8AruEdMnBcuwAAAABJRU5ErkJggg==">
-    
-                        </div>
-                        <div class="mega-menu images">
-                            <p>Phụ Kiện</p>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACLklEQVR4nO2ZP0jcMRTHP1pw6+Dk4uAmDi3tIIhjNze1/KoiFXHs7CKdHFqhuoiIY5diy4mT0MX9cOvUavHP4lzU9pAWqr/yIAePmPv98vvd4eVovvDgSF6S+1zeS3IJREVF/fdKgLSBSV0R9QBTwDZwBNSMHZmyF8YnaJDnwGlGX3U7ASZDBHkArHkA2LYKdLcKogJUMwarGp8suSC+Am+BeWPy+ZvD712rQHx/vaxw0n6XwAzQ5fCVslngymoz3m6QHisnBOKRx5iPLZjjViwArjByhZtLU5aPzISvXja5OmaCJBkLgEvbVk64wqmRuoBD1f5DO0G+q/o3JcZeUe1ln2kbyC9VLytTUS2o9tJX20CajfHEc2X0UgQh4BmpFlx+gwVJC26IQYGceUDI7h08yFPgvQmnc9XpuSmTuiedAKJVUZ3mnXhFEcQozkieYmgRk52OXbWeAesNTg9S9glYBvpDBlkEbj1PEhfmL3FwIH3AnwJHohTYDxFkzBFGFYfpcKuFCOK7+SWtOLZEEOKM3FEMLa2PKsl2yb+B10k5EVKyr6sOvuT4DloDjub4JyWW37QsiL6PlR142PMp4TfwsCBI6mml1Av8tF6WBhx+08Bf5bfj0fe9goheWx3JVeYGMAe8Aj5b9TIbQ+RrxHEvkDb5wJSbxHueg92WuPPVm26aYU0/M2AeXTaBm4yBfpjXKkIGqUuugbbM88G1+fIHwJLJJzoFJCoqis7TP6kUYt44YnfSAAAAAElFTkSuQmCC">
-
-                        </div>
-                    </div>
-                </a>
-            </div>
-        
-            <div class="navbar-item right">
-                <a href="#">HỖ TRỢ</a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href=""><i class="fa-solid fa-house"></i></a>
                 
-            </div>    
-        </div>
-    </div>
-    
-  
-     <div class="nav__overlay">
-    </div> 
-    
-    <div class="slide-container">
-        <div class="list-image">
-            <img class="image" src="img/xiaomi14Ultra.PNG" alt="">
-            <img class="image" src="./img/redmi13.PNG" alt="">
-            <img class="image" src="./img/redmi note 13 pro.PNG" alt="">
-            <img class="image" src="./img/redmi pad pro.PNG" alt="">
-        </div>
-        <div class="next" onclick="plusSlide(-1)">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAARklEQVR4nO3NsQ0AIAzEwN88lGxtBANQ4SISLyWlL/nrsGkD2Ag2go1gI9gINoKNcLkygXoRjx2PHY8djx2PHd8b5/+13QJ3xUACiE5l8AAAAABJRU5ErkJggg==">
-        </div>
-        <div class="prev" onclick="plusSlide(1)">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAQklEQVR4nO3UsQ0AIBDDQG9Ny+ZmBBpcvEQG8HWBv+nbddw6bh23jlvHrePWcV8AqwZuCDVCjVAj1Ag1Mveu/3iyA6HmP4qebmvvAAAAAElFTkSuQmCC">
-        </div>
-    </div>
-
-   
-     <div class="product-block" >
-        <div class="title">
-            <h1>Sản Phẩm Nổi Bật</h1>
-        </div>
-        <div class="product-tag">
-            <p class="tags one active">Sản Phẩm Cao Cấp</p>
-            <p class="tags two">Sản Phẩm Thời Thượng</p>
-            <p class="tags three">Giải Trí Tại Nhà</p>
-            <p class="tags four">Thiết Bị Gia Dụng</p>
-        </div>
-        <div class="product-select">
-            <!-- <div  class="line"></div> -->
-            <div class="product_content active">
-                    
+                <div class="product_content"> 
+                    <div class="product_content_inner third">
+                        <div class="block">
+                            <img src="./img/redmi note13.webp" alt="">
+                            <div class="block-text">
+                                <h1>Redmi Note 13 </h1>
+                                <p> Ống kính quang học chuyên nghiệp của Lecia kháng nước và bụi chuẩn IP68</p>
+                                <button class="btn-more">Tìm hiểu thêm</button>                     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_content_inner fourth">
+                        <div class="wrapper">
+                            <div class="wrapper-div one">
+                                <img src="./img/note13pro+ 5g.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>   
+                                    <button class="btn-more">Tìm hiểu thêm</button>  
+                                </div>   
+                            </div>
+                            <div class="wrapper-div two">
+                                <img src="./img/note13pro 5.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>  
+                                    <button class="btn-more">Tìm hiểu thêm</button>  
+                                </div>   
+                            </div>
+                            <div class="wrapper-div three">
+                                <img src="./img/redmi buds 5pro.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>                   
+                                </div>   
+                                <button class="btn-more">Tìm hiểu thêm</button>  
+                            </div>
+                            <div class="wrapper-div four">
+                                <img src="./img/redmi watch 4.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>  
+                                    <button class="btn-more">Tìm hiểu thêm</button>  
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="product_content">
+                        
                     <div class="product_content_inner first">
-                       <div class="block">
-                              <img src="./img/xiaomi.webp" alt="">  
+                        <div class="block">
+                            <img src="./img/xiaomi.webp" alt="">
                             <div class="block-text">
                                 <h1>Xiaomi 13T Pro</h1>
                                 <p> Ống kính quang học chuyên nghiệp của Lecia kháng nước và bụi chuẩn IP68</p>
-                                <button class="btn-more">Tìm hiểu thêm</button>  
-                            </div> 
-                                                 
-                        </div>  
-                    </div>  
-
-                    
-                     <div class="product_content_inner second">
+                                <button class="btn-more">Tìm hiểu thêm</button>                     
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_content_inner second">
                         <div class="block">
-                             <img src="./img/dh s3.webp" alt=""> 
-                             <div class="block-text">
+                            <img src="./img/dh s3.webp" alt="">
+                            <div class="block-text">
                                 <h3>Xiaomi Watch S3</h3>
                                 <băng>Hỗ trợ 150+ chế độ luyện tập tích hợp GNSS băng tần kép L1+L5</p>
                                 <button class="btn-more">Tìm hiểu thêm</button>                     
@@ -147,194 +233,111 @@
                             </div>
                         </div>
                         <div class="block">
-                           <img src="./img/dh band8 pro.webp" alt="">
+                            <img src="./img/dh band8 pro.webp" alt="">
                             <div class="block-text">
                                 <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>                   
+                                <p> Thời lượng pin lên đến 14 ngày</p> 
                                 <button class="btn-more">Tìm hiểu thêm</button>  
+    
                             </div>   
                         </div>
                     </div>
                 
-            </div>
-            
-            
-            <div class="product_content"> 
-                <div class="product_content_inner third">
-                    <div class="block">
-                        <img src="./img/redmi note13.webp" alt="">
-                        <div class="block-text">
-                            <h1>Redmi Note 13 </h1>
-                            <p> Ống kính quang học chuyên nghiệp của Lecia kháng nước và bụi chuẩn IP68</p>
-                            <button class="btn-more">Tìm hiểu thêm</button>                     
-                        </div>
-                    </div>
                 </div>
-                <div class="product_content_inner fourth">
-                    <div class="wrapper">
-                        <div class="wrapper-div one">
-                            <img src="./img/note13pro+ 5g.webp" alt="">
+                
+                
+                <div class="product_content">
+                    <div class="product_content_inner third">
+                        <div class="block">
+                            <img src="./img/redmi note13.webp" alt="">
                             <div class="block-text">
-                                <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>   
-                                <button class="btn-more">Tìm hiểu thêm</button>  
-                            </div>   
-                        </div>
-                        <div class="wrapper-div two">
-                            <img src="./img/note13pro 5.webp" alt="">
-                            <div class="block-text">
-                                <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>  
-                                <button class="btn-more">Tìm hiểu thêm</button>  
-                            </div>   
-                        </div>
-                        <div class="wrapper-div three">
-                            <img src="./img/redmi buds 5pro.webp" alt="">
-                            <div class="block-text">
-                                <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>                   
-                            </div>   
-                            <button class="btn-more">Tìm hiểu thêm</button>  
-                        </div>
-                        <div class="wrapper-div four">
-                            <img src="./img/redmi watch 4.webp" alt="">
-                            <div class="block-text">
-                                <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>  
-                                <button class="btn-more">Tìm hiểu thêm</button>  
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="product_content active">
-                    
-                <div class="product_content_inner first">
-                    <div class="block">
-                        <img src="./img/xiaomi.webp" alt="">
-                        <div class="block-text">
-                            <h1>Xiaomi 13T Pro</h1>
-                            <p> Ống kính quang học chuyên nghiệp của Lecia kháng nước và bụi chuẩn IP68</p>
-                            <button class="btn-more">Tìm hiểu thêm</button>                     
+                                <h1>Redmi Note 13 </h1>
+                                <p> Ống kính quang học chuyên nghiệp của Lecia kháng nước và bụi chuẩn IP68</p>
+                                <button class="btn-more">Tìm hiểu thêm</button>                     
                             
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product_content_inner second">
-                    <div class="block">
-                        <img src="./img/dh s3.webp" alt="">
-                        <div class="block-text">
-                            <h3>Xiaomi Watch S3</h3>
-                            <băng>Hỗ trợ 150+ chế độ luyện tập tích hợp GNSS băng tần kép L1+L5</p>
-                            <button class="btn-more">Tìm hiểu thêm</button>                     
-
+                    <div class="product_content_inner fourth">
+                        <div class="wrapper">
+                            <div class="wrapper-div one">
+                                <img src="./img/note13pro+ 5g.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>   
+                                    <button class="btn-more">Tìm hiểu thêm</button>  
+                                </div>   
+                            </div>
+                            <div class="wrapper-div two">
+                                <img src="./img/note13pro 5.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>  
+                                    <button class="btn-more">Tìm hiểu thêm</button>  
+                                </div>   
+                            </div>
+                            <div class="wrapper-div three">
+                                <img src="./img/redmi buds 5pro.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>                   
+                                </div>   
+                                <button class="btn-more">Tìm hiểu thêm</button>  
+                            </div>
+                            <div class="wrapper-div four">
+                                <img src="./img/redmi watch 4.webp" alt="">
+                                <div class="block-text">
+                                    <h3>Xiaomi Smart Band 8 Pro</h3>
+                                    <p> Thời lượng pin lên đến 14 ngày</p>  
+                                    <button class="btn-more">Tìm hiểu thêm</button>  
+                                </div>   
+                            </div>
                         </div>
                     </div>
-                    <div class="block">
-                        <img src="./img/dh band8 pro.webp" alt="">
-                        <div class="block-text">
-                            <h3>Xiaomi Smart Band 8 Pro</h3>
-                            <p> Thời lượng pin lên đến 14 ngày</p> 
-                            <button class="btn-more">Tìm hiểu thêm</button>  
-
-                        </div>   
-                    </div>
-                </div>
-            
+                </div> 
             </div>
-            
-            
-            <div class="product_content">
-                <div class="product_content_inner third">
-                    <div class="block">
-                        <img src="./img/redmi note13.webp" alt="">
-                        <div class="block-text">
-                            <h1>Redmi Note 13 </h1>
-                            <p> Ống kính quang học chuyên nghiệp của Lecia kháng nước và bụi chuẩn IP68</p>
-                            <button class="btn-more">Tìm hiểu thêm</button>                     
-                        
-                        </div>
-                    </div>
+        </div>
+    
+    
+    
+        <div class="container_support">
+            <div class="title">
+                <h1>Bộ phận hỗ trợ</h1>
+            </div>
+            <div class="container_support_inner">
+                <div class="container_inner ">
+                    <img src="./img/icons8-headset-48.png" alt="">
+                    <a href="#" class="container_inner_block">
+                        <h3>Chăm Sóc Khách Hàng</h3>
+                        <p>Liên hệ với chúng tôi qua kênh chat,email và hotline</p>
+                    </a>
                 </div>
-                <div class="product_content_inner fourth">
-                    <div class="wrapper">
-                        <div class="wrapper-div one">
-                            <img src="./img/note13pro+ 5g.webp" alt="">
-                            <div class="block-text">
-                                <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>   
-                                <button class="btn-more">Tìm hiểu thêm</button>  
-                            </div>   
-                        </div>
-                        <div class="wrapper-div two">
-                            <img src="./img/note13pro 5.webp" alt="">
-                            <div class="block-text">
-                                <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>  
-                                <button class="btn-more">Tìm hiểu thêm</button>  
-                            </div>   
-                        </div>
-                        <div class="wrapper-div three">
-                            <img src="./img/redmi buds 5pro.webp" alt="">
-                            <div class="block-text">
-                                <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>                   
-                            </div>   
-                            <button class="btn-more">Tìm hiểu thêm</button>  
-                        </div>
-                        <div class="wrapper-div four">
-                            <img src="./img/redmi watch 4.webp" alt="">
-                            <div class="block-text">
-                                <h3>Xiaomi Smart Band 8 Pro</h3>
-                                <p> Thời lượng pin lên đến 14 ngày</p>  
-                                <button class="btn-more">Tìm hiểu thêm</button>  
-                            </div>   
-                        </div>
-                    </div>
+                <div class="container_inner">
+                    <img src="./img/icons8-protect-48.png" alt="">
+                    <a href="#" class="container_inner_block">
+                        <h3>Dịch Vụ Bảo Hành</h3>
+                        <p>Xiaomi đang có 100 trung tâm bảo hành tại Việt Nam</p>
+                    </a>    
                 </div>
-            </div> 
+                <div class="container_inner ">
+                    <img src="./img/icons8-stack-of-paper-60.png" alt="" width="45px">
+                    <a href="#" class="container_inner_block">
+                        <h3>Hướng Dẫn Sử Dụng</h3>
+                        <p>Tìm hiểu thêm về hướng dẫn sử dụng các sản phẩm của Xiaomi</p>
+                    </a>
+                </div>
+                <div class="container_inner ">
+                    <img src="./img/icons8-faq-48.png" alt="">
+                    <a href="#" class="container_inner_block">
+                        <h3>FQA</h3>
+                        <p>Giải đáp thắc mắc của bạn bằng tệp câu hỏi thông thường</p>
+                    </a>    
+                </div>
+            </div>
         </div>
     </div>
 
-
-
-    <div class="container_support">
-        <div class="title">
-            <h1>Bộ phận hỗ trợ</h1>
-        </div>
-        <div class="container_support_inner">
-            <div class="container_inner ">
-                <img src="./img/icons8-headset-48.png" alt="">
-                <a href="#" class="container_inner_block">
-                    <h3>Chăm Sóc Khách Hàng</h3>
-                    <p>Liên hệ với chúng tôi qua kênh chat,email và hotline</p>
-                </a>
-            </div>
-            <div class="container_inner">
-                <img src="./img/icons8-protect-48.png" alt="">
-                <a href="#" class="container_inner_block">
-                    <h3>Dịch Vụ Bảo Hành</h3>
-                    <p>Xiaomi đang có 100 trung tâm bảo hành tại Việt Nam</p>
-                </a>    
-            </div>
-            <div class="container_inner ">
-                <img src="./img/icons8-stack-of-paper-60.png" alt="" width="45px">
-                <a href="#" class="container_inner_block">
-                    <h3>Hướng Dẫn Sử Dụng</h3>
-                    <p>Tìm hiểu thêm về hướng dẫn sử dụng các sản phẩm của Xiaomi</p>
-                </a>
-            </div>
-            <div class="container_inner ">
-                <img src="./img/icons8-faq-48.png" alt="">
-                <a href="#" class="container_inner_block">
-                    <h3>FQA</h3>
-                    <p>Giải đáp thắc mắc của bạn bằng tệp câu hỏi thông thường</p>
-                </a>    
-            </div>
-        </div>
-    </div>
+</body>
 
 
 <footer class="footer">
@@ -386,7 +389,6 @@
 </footer> 
 
 
-</body>
 <script src="./dt.js"></script>
 </html>
 
